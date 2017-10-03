@@ -10,6 +10,9 @@
     <Filter Include="src">
       <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
     </Filter>
+    <Filter Include="classes">
+      <UniqueIdentifier>{332455e2-bb00-44c6-8d70-6bc9ce0e610a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -21,6 +24,33 @@
     <ClCompile Include="..\Classes\HelloWorldScene.cpp">
       <Filter>src</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\CivCity.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CivImprovement.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CivPlayer.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CivTech.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CivTile.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CivTileType.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CivType.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CivUnit.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\CivWorld.cpp">
+      <Filter>classes</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
@@ -31,6 +61,33 @@
     </ClInclude>
     <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CivCity.hpp">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CivImprovement.hpp">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CivPlayer.hpp">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CivTech.hpp">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CivTile.hpp">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CivTileType.hpp">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CivType.hpp">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CivUnit.hpp">
+      <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CivWorld.hpp">
+      <Filter>classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
