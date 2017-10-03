@@ -11,4 +11,12 @@
 
 #include <stdio.h>
 
+class CivUnit
+{
+public:
+	CivUnit();
+	~CivUnit();
+};
+
+
 #endif /* CivUnit_hpp */

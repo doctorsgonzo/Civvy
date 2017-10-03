@@ -7,3 +7,12 @@
 //
 
 #include "CivUnit.hpp"
+
+CivUnit::CivUnit()
+{
+}
+
+
+CivUnit::~CivUnit()
+{
+}

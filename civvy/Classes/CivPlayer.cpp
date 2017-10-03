@@ -7,3 +7,12 @@
 //
 
 #include "CivPlayer.hpp"
+
+CivPlayer::CivPlayer()
+{
+}
+
+
+CivPlayer::~CivPlayer()
+{
+}

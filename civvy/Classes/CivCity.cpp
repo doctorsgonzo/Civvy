@@ -7,3 +7,12 @@
 //
 
 #include "CivCity.hpp"
+
+CivCity::CivCity()
+{
+}
+
+
+CivCity::~CivCity()
+{
+}

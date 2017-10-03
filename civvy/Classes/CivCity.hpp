@@ -11,4 +11,11 @@
 
 #include <stdio.h>
 
+class CivCity
+{
+public:
+	CivCity();
+	~CivCity();
+};
+
 #endif /* CivCity_hpp */

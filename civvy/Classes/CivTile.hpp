@@ -11,4 +11,12 @@
 
 #include <stdio.h>
 
+class CivTile
+{
+public:
+	CivTile();
+	~CivTile();
+};
+
+
 #endif /* CivTile_hpp */
