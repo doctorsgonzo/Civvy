@@ -7,3 +7,12 @@
 //
 
 #include "CivImprovement.hpp"
+
+CivImprovement::CivImprovement()
+{
+}
+
+
+CivImprovement::~CivImprovement()
+{
+}

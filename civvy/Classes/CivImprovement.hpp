@@ -11,4 +11,11 @@
 
 #include <stdio.h>
 
+class CivImprovement
+{
+public:
+	CivImprovement();
+	~CivImprovement();
+};
+
 #endif /* CivImprovement_hpp */

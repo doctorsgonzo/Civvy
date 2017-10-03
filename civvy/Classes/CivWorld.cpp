@@ -7,3 +7,12 @@
 //
 
 #include "CivWorld.hpp"
+
+CivWorld::CivWorld()
+{
+}
+
+
+CivWorld::~CivWorld()
+{
+}

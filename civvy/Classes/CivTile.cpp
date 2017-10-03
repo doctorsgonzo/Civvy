@@ -7,3 +7,12 @@
 //
 
 #include "CivTile.hpp"
+
+CivTile::CivTile()
+{
+}
+
+
+CivTile::~CivTile()
+{
+}

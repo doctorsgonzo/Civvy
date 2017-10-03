@@ -11,4 +11,11 @@
 
 #include <stdio.h>
 
+class CivPlayer
+{
+public:
+	CivPlayer();
+	~CivPlayer();
+};
+
 #endif /* CivPlayer_hpp */
