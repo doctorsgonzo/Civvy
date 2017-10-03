@@ -1,3 +1,13 @@
 # ignore
+civvy/cocos2d/
+civvy/proj.win32/.vs/civvy/v15/Browse.VC.opendb
+civvy/proj.win32/.vs/civvy/v15/ipch/
+
 civvy/proj.win32/Debug.win32/
 civvy/proj.win32/Debug.win32/civvy.tlog/
+
+civvy/proj.win32/.vs/civvy/v15/.suo
+civvy/proj.win32/.vs/civvy/v15/Browse.VC.db
+civvy/proj.win32/.vs/civvy/v15/Solution.VC.db
+civvy/proj.win32/.vs/civvy/v15/Solution.VC.db-shm
+civvy/proj.win32/.vs/civvy/v15/Solution.VC.db-wal
