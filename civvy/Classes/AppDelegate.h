@@ -2,6 +2,8 @@
 #define  _APP_DELEGATE_H_
 
 #include "cocos2d.h"
+#include "MenuScene.h"
+#include "CivvyScene.h"
 
 /**
 @brief    The cocos2d Application.
@@ -34,6 +36,13 @@ public:
     @param  the pointer of the application
     */
     virtual void applicationWillEnterForeground();
+
+	MenuScene * menuScene;
+	CivvyScene * civvyScene;
+
+	cocos2d::Director * director;
+
+	void AppDelegate::startCivvy();
 };
 
 #endif // _APP_DELEGATE_H_

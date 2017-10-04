@@ -156,8 +156,9 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClCompile Include="..\Classes\CivTileType.cpp" />
     <ClCompile Include="..\Classes\CivType.cpp" />
     <ClCompile Include="..\Classes\CivUnit.cpp" />
+    <ClCompile Include="..\Classes\CivvyScene.cpp" />
     <ClCompile Include="..\Classes\CivWorld.cpp" />
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp" />
+    <ClCompile Include="..\Classes\MenuScene.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -170,8 +171,9 @@ xcopy "$(ProjectDir)..\Resources" "$(OutDir)" /D /E /I /F /Y
     <ClInclude Include="..\Classes\CivTileType.hpp" />
     <ClInclude Include="..\Classes\CivType.hpp" />
     <ClInclude Include="..\Classes\CivUnit.hpp" />
+    <ClInclude Include="..\Classes\CivvyScene.h" />
     <ClInclude Include="..\Classes\CivWorld.hpp" />
-    <ClInclude Include="..\Classes\HelloWorldScene.h" />
+    <ClInclude Include="..\Classes\MenuScene.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>
   <ItemGroup>

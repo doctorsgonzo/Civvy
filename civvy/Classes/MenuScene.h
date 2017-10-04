@@ -3,18 +3,22 @@
 
 #include "cocos2d.h"
 
-class HelloWorld : public cocos2d::Scene
+class MenuScene : public cocos2d::Scene
 {
 public:
-    static cocos2d::Scene* createScene();
+    static MenuScene* createScene();
 
     virtual bool init();
     
     // a selector callback
     void menuCloseCallback(cocos2d::Ref* pSender);
+
+	std::function<void()> _startCivvyCallback;
+
+	void MenuScene::setStartCivvyCallback(std::function<void()>);
     
     // implement the "static create()" method manually
-    CREATE_FUNC(HelloWorld);
+    CREATE_FUNC(MenuScene);
 };
 
 #endif // __HELLOWORLD_SCENE_H__
