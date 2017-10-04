@@ -10,12 +10,14 @@
 #define CivTile_hpp
 
 #include <stdio.h>
+#include "CivTileType.hpp"
 
 class CivTile
 {
 public:
 	CivTile();
 	~CivTile();
+	CivTileType tileType;
 };
 
 

@@ -7,9 +7,11 @@
 //
 
 #include "CivTile.hpp"
+#include "CivTileType.hpp"
 
 CivTile::CivTile()
 {
+	tileType = Grassland;
 }
 
 

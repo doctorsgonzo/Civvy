@@ -63,6 +63,33 @@ bool CivvyScene::init()
 	// add the sprite as a child to this layer
 	this->addChild(sprite, 0);
 
+	SpriteFrameCache* cache = SpriteFrameCache::getInstance();
+	cache->addSpriteFramesWithFile("terrain_base.plist");
+
+	Sprite* Sprite1 = Sprite::createWithSpriteFrameName("arctic.png");
+
+	double spriteWidthX = (Sprite1->getBoundingBox().getMaxX() - Sprite1->getBoundingBox().getMinX());
+	double spriteHeightY = (Sprite1->getBoundingBox().getMaxY() - Sprite1->getBoundingBox().getMinY());
+
+	Sprite1->setPosition(256.0, 256.0);
+
+	Sprite* Sprite2 = Sprite::createWithSpriteFrameName("desert.png");
+
+	Sprite2->setPosition(256.0 + spriteWidthX, 256.0);
+
+	Sprite* Sprite3 = Sprite::createWithSpriteFrameName("arctic.png");
+
+	Sprite3->setPosition(256.0 + spriteWidthX / 2.0, 256.0 + spriteHeightY / 2.0);
+
+	Sprite* Sprite4 = Sprite::createWithSpriteFrameName("desert.png");
+
+	Sprite4->setPosition(256.0 + spriteWidthX / 2.0 + spriteWidthX, 256.0 + spriteHeightY / 2.0);
+
+	addChild(Sprite1);
+	addChild(Sprite2);
+	addChild(Sprite3);
+	addChild(Sprite4);
+
 	return true;
 }
 

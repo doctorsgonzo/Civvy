@@ -96,15 +96,15 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    this->menuScene = MenuScene::createScene();
-	this->menuScene->setStartCivvyCallback(std::bind(&AppDelegate::startCivvy, this));
+    menuScene = MenuScene::createScene();
+	menuScene->setStartCivvyCallback(std::bind(&AppDelegate::startCivvy, this));
 
-
-	this->civvyScene = CivvyScene::createScene();
+	civvyScene = CivvyScene::createScene();
 
 	//need to fix this
 	menuScene->retain();
 	civvyScene->retain();
+
     // run menu
     director->runWithScene(menuScene);
 
