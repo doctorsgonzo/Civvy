@@ -1,5 +1,6 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
+#include "MenuScene.h"
+#include "CivvyScene.h"
 
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
@@ -18,9 +19,10 @@ using namespace CocosDenshion;
 
 USING_NS_CC;
 
-static cocos2d::Size designResolutionSize = cocos2d::Size(480, 320);
+static cocos2d::Size designResolutionSize = cocos2d::Size(1920, 1080);
 static cocos2d::Size smallResolutionSize = cocos2d::Size(480, 320);
 static cocos2d::Size mediumResolutionSize = cocos2d::Size(1024, 768);
+static cocos2d::Size hdResolutionSize = cocos2d::Size(1920, 1080);
 static cocos2d::Size largeResolutionSize = cocos2d::Size(2048, 1536);
 
 AppDelegate::AppDelegate()
@@ -55,7 +57,7 @@ static int register_all_packages()
 
 bool AppDelegate::applicationDidFinishLaunching() {
     // initialize director
-    auto director = Director::getInstance();
+    director = Director::getInstance();
     auto glview = director->getOpenGLView();
     if(!glview) {
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32) || (CC_TARGET_PLATFORM == CC_PLATFORM_MAC) || (CC_TARGET_PLATFORM == CC_PLATFORM_LINUX)
@@ -94,10 +96,17 @@ bool AppDelegate::applicationDidFinishLaunching() {
     register_all_packages();
 
     // create a scene. it's an autorelease object
-    auto scene = HelloWorld::createScene();
+    this->menuScene = MenuScene::createScene();
+	this->menuScene->setStartCivvyCallback(std::bind(&AppDelegate::startCivvy, this));
 
-    // run
-    director->runWithScene(scene);
+
+	this->civvyScene = CivvyScene::createScene();
+
+	//need to fix this
+	menuScene->retain();
+	civvyScene->retain();
+    // run menu
+    director->runWithScene(menuScene);
 
     return true;
 }
@@ -124,4 +133,8 @@ void AppDelegate::applicationWillEnterForeground() {
     SimpleAudioEngine::getInstance()->resumeBackgroundMusic();
     SimpleAudioEngine::getInstance()->resumeAllEffects();
 #endif
+}
+
+void AppDelegate::startCivvy() {
+	director->replaceScene(this->civvyScene);
 }

@@ -21,9 +21,6 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
-      <Filter>src</Filter>
-    </ClCompile>
     <ClCompile Include="..\Classes\CivCity.cpp">
       <Filter>classes</Filter>
     </ClCompile>
@@ -51,15 +48,18 @@
     <ClCompile Include="..\Classes\CivWorld.cpp">
       <Filter>classes</Filter>
     </ClCompile>
+    <ClCompile Include="..\Classes\CivvyScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MenuScene.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="main.h">
       <Filter>win32</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\AppDelegate.h">
-      <Filter>src</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
       <Filter>src</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\CivCity.hpp">
@@ -88,6 +88,12 @@
     </ClInclude>
     <ClInclude Include="..\Classes\CivWorld.hpp">
       <Filter>classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\CivvyScene.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MenuScene.h">
+      <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

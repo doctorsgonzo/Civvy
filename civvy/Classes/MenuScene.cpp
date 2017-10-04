@@ -1,15 +1,15 @@
-#include "HelloWorldScene.h"
+#include "MenuScene.h"
 #include "SimpleAudioEngine.h"
 
 USING_NS_CC;
 
-Scene* HelloWorld::createScene()
+MenuScene* MenuScene::createScene()
 {
-    return HelloWorld::create();
+    return MenuScene::create();
 }
 
 // on "init" you need to initialize your instance
-bool HelloWorld::init()
+bool MenuScene::init()
 {
     //////////////////////////////
     // 1. super init first
@@ -29,7 +29,7 @@ bool HelloWorld::init()
     auto closeItem = MenuItemImage::create(
                                            "CloseNormal.png",
                                            "CloseSelected.png",
-                                           CC_CALLBACK_1(HelloWorld::menuCloseCallback, this));
+                                           CC_CALLBACK_1(MenuScene::menuCloseCallback, this));
     
     closeItem->setPosition(Vec2(origin.x + visibleSize.width - closeItem->getContentSize().width/2 ,
                                 origin.y + closeItem->getContentSize().height/2));
@@ -67,10 +67,13 @@ bool HelloWorld::init()
 }
 
 
-void HelloWorld::menuCloseCallback(Ref* pSender)
+void MenuScene::menuCloseCallback(Ref* pSender)
 {
+	//need defensive programming here
+	this->_startCivvyCallback();
+
     //Close the cocos2d-x game scene and quit the application
-    Director::getInstance()->end();
+    //Director::getInstance()->end();
 
     #if (CC_TARGET_PLATFORM == CC_PLATFORM_IOS)
     exit(0);
@@ -82,4 +85,9 @@ void HelloWorld::menuCloseCallback(Ref* pSender)
     //_eventDispatcher->dispatchEvent(&customEndEvent);
     
     
+}
+
+void MenuScene::setStartCivvyCallback(std::function<void()> callback)
+{
+	this->_startCivvyCallback = callback;
 }
