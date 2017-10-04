@@ -10,6 +10,12 @@
 
 CivWorld::CivWorld()
 {
+	for (int i = 0; i < CivWorld::maxWorldHeight; i++) {
+		for (int j = 0; j < CivWorld::maxWorldWidth; j++) {
+		//	tiles[i][j]
+		}
+	}
+
 }
 
 

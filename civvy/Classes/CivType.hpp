@@ -13,6 +13,7 @@
 
 enum CivType {
     America,
-    China};
+    China
+};
 
 #endif /* CivType_hpp */

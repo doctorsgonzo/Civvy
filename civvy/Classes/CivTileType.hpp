@@ -11,4 +11,9 @@
 
 #include <stdio.h>
 
+enum CivTileType {
+	Grassland,
+	Mountain
+};
+
 #endif /* CivTileType_hpp */
